@@ -7,6 +7,71 @@
     <title>Dashboard Financeiro</title>
 </head>
 <body>
+    <header>
+        <h1>Dashboard Financeiro</h1>
+    </header>
+    <main id="container">
+        <section class="resumo">
+            <h2>Financeiro</h2>
+                <article class="card">
+                    <P>Receita</P>
+                </article>
+                <article class="card">
+                    <p>Despesas</p>
+                </article>
+                <article class="card">
+                    <p>Saldo</p>
+                </article>
+        </section>
+        <section class="cadastro">
+            <h2>Cadastro</h2>
+            <form class="formulario">
+                <label for="desc">Descrição:</label>
+                <input type="text" name="desc" id="desc" placeholder="Digite uma descrição">
+
+                <label for="valor">Valor:</label>
+                <input type="number" name="valor" id="valor"
+                placeholder="Digite o valor">
+
+                <label for="saida">Saida</label>
+                <input type="radio" name="movi" id="saida" checked>
+                <label for="entrada">Entrada</label>
+                <input type="radio" name="movi" id="entrada" >
+
+                <label for="categoria">Categoria</label>
+                <select name="categoria" id="categoria">
+                    <option value="">Selecione uma Categoria</option>
+                    <option value="alimentaçao">Alimentação</option>
+                    <option value="besteira">Besteira</option>
+                    <option value="quinzena">Quinzena</option>
+                    <option value="transporte">Transporte</option>
+                    <option value="imprevisto">Imprevisto</option>
+                    <option value="lazer">Lazer</option>
+                </select>
+
+                <label for="data">Data</label>
+                <input type="date" name="data" id="data">
+               
+                <input type="submit" value="Cadastrar">
+            </form>
+        </section>
+        <section class="filtro">
+            <h2>Filtros</h2>
+            <form action="" class="formulario">
+                <label for="ent">Entrada</label>
+                <input type="checkbox" name="entrada" id="ent">
+                <label for="sai">Saida</label>
+                <input type="checkbox" name="saida" id="sai">
+                <input type="submit" value="Filtrar">
+            </form>
+        </section>
+        <section class="lista">
+            <h2>Lista de movimentação</h2>
+            <ul>
+                <li>Nenhuma movimentação...</li>
+            </ul>
+        </section>
+    </main>
     <script src="js/app.js"></script>
 </body>
 </html>
