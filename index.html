@@ -15,12 +15,15 @@
             <h2>Financeiro</h2>
                 <article class="card">
                     <P>Receita</P>
+                    <p id="receita">R$0,00</p>
                 </article>
                 <article class="card">
                     <p>Despesas</p>
+                    <p id="despesas">R$0,00</p>
                 </article>
                 <article class="card">
                     <p>Saldo</p>
+                    <p id="saldo">R$0,00</p>
                 </article>
         </section>
         <section class="cadastro">
@@ -57,7 +60,7 @@
                         <label for="data">Data</label>
                         <input type="date" name="data" id="data" class="campo">
                     </div>
-                    <div class="botao"><input type="submit" value="Cadastrar">
+                    <div class="botao"><input type="submit" value="Cadastrar" id="cadastrar">
                     </div>
                 </fieldset>
             </form>
@@ -74,7 +77,7 @@
         </section>
         <section class="lista">
             <h2>Lista de movimentação</h2>
-            <ul>
+            <ul id="list">
                 <li>Nenhuma movimentação...</li>
             </ul>
         </section>

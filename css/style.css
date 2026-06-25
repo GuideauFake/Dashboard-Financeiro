@@ -50,8 +50,18 @@ header{
 .linha{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 5px;
     margin: 5px;
     border: 1px solid black;
+    padding: 5px;
+}
+
+.campo{
+    border: 1px solid black;
+    
+    flex-grow: 1;
+
+    border-radius: 10px;
     padding: 5px;
 }
