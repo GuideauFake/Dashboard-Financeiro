@@ -26,33 +26,40 @@
         <section class="cadastro">
             <h2>Cadastro</h2>
             <form class="formulario">
-                <label for="desc">Descrição:</label>
-                <input type="text" name="desc" id="desc" placeholder="Digite uma descrição">
-
-                <label for="valor">Valor:</label>
-                <input type="number" name="valor" id="valor"
-                placeholder="Digite o valor">
-
-                <label for="saida">Saida</label>
-                <input type="radio" name="movi" id="saida" checked>
-                <label for="entrada">Entrada</label>
-                <input type="radio" name="movi" id="entrada" >
-
-                <label for="categoria">Categoria</label>
-                <select name="categoria" id="categoria">
-                    <option value="">Selecione uma Categoria</option>
-                    <option value="alimentaçao">Alimentação</option>
-                    <option value="besteira">Besteira</option>
-                    <option value="quinzena">Quinzena</option>
-                    <option value="transporte">Transporte</option>
-                    <option value="imprevisto">Imprevisto</option>
-                    <option value="lazer">Lazer</option>
-                </select>
-
-                <label for="data">Data</label>
-                <input type="date" name="data" id="data">
-               
-                <input type="submit" value="Cadastrar">
+                <fieldset class="cadastro-formulario">
+                <legend>Area de Cadastro</legend>
+                    <div class="linha">
+                        <label for="desc">Descrição:</label>
+                        <input type="text" name="desc" id="desc" placeholder="Digite uma descrição">
+                    </div>
+                    <div class="linha">
+                        <label for="valor">Valor:</label>
+                        <input type="number" name="valor" id="valor"
+                        placeholder="Digite o valor">
+                        
+                        <label for="saida">Saida</label>
+                        <input type="radio" name="movi" id="saida" checked>
+                        <label for="entrada">Entrada</label>
+                        <input type="radio" name="movi" id="entrada" >
+                    </div>
+                    <div class="linha">
+                        <label for="categoria">Categoria</label>
+                        <select name="categoria" id="categoria">
+                            <option value="">Selecione uma Categoria</option>
+                            <option value="alimentaçao">Alimentação</option>
+                            <option value="besteira">Besteira</option>
+                            <option value="quinzena">Quinzena</option>
+                            <option value="transporte">Transporte</option>
+                            <option value="imprevisto">Imprevisto</option>
+                            <option value="lazer">Lazer</option>
+                        </select>
+    
+                        <label for="data">Data</label>
+                        <input type="date" name="data" id="data">
+                    </div>
+                    <div class="botao"><input type="submit" value="Cadastrar">
+                    </div>
+                </fieldset>
             </form>
         </section>
         <section class="filtro">
