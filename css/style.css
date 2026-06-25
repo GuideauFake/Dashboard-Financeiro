@@ -41,3 +41,17 @@ header{
     border-radius: 5px;
     text-align: center;
 }
+.cadastro-formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+.linha{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    padding: 5px;
+}
