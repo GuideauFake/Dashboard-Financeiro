@@ -18,11 +18,20 @@ formulario.addEventListener('submit', function(event){
     const infovalor = valor.value
     const infocategoria = categoria.value
     const infodata = data.value
+   
+    
+   let tipoMovimentacao
 
-    console.log(infodescricao)
-    console.log(infovalor)
+if (entrada.checked) {
+    tipoMovimentacao = "Entrada"
+} else {
+    tipoMovimentacao = "Saída"
+}
+
+console.log(tipoMovimentacao)
+ 
     console.log(infocategoria)
-    console.log(infodata)
+    
 
 })
 
