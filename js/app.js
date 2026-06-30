@@ -29,7 +29,6 @@ formularioInput.addEventListener('submit', function(event){
         window.alert(`Selecione uma Categoria valida`)
        
      }else{   
-        /*Checa o Tipo da movimentação*/
         
         //guarda as movimentações
         const tipoMovimentacao = obterTipoMovimentacao()
@@ -93,7 +92,6 @@ function renderizarLista(){
     }
 }
 
-
 function atualizarResumo(){
     
     let totalReceitas = 0
@@ -121,6 +119,4 @@ function limparFormulario(){
         dataInput.value = ""
         saidaInput.checked = true
         descricaoInput.focus()
-
-        return limparFormulario
 }
